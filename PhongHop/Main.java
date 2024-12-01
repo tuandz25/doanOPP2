@@ -43,8 +43,5 @@ public class Main {
 
 		roomManager.createRoom(name, type, capacity, price, status, floor);
 
-		System.out.println("--------------------------");
-		roomManager.displayRooms();
-		System.out.println("--------------------------");
 	}
 }

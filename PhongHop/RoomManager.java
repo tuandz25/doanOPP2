@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoomManager {
-	private static final String FILE_NAME = "C:\\Users\\tuanpham\\Documents\\workspace-spring-tool-suite-4-4.25.0.RELEASE\\HelloWorld\\src\\PhongHop\\rooms";
+	private static final String FILE_NAME = "src\\PhongHop\\rooms";
 	private List<Room> rooms;
 
 	public RoomManager() {
@@ -39,7 +39,7 @@ public class RoomManager {
 				bw.write(room.toCSV());
 				bw.newLine();
 			}
-			bw.flush(); // Đảm bảo dữ liệu được ghi vào file
+			bw.flush();
 		} catch (IOException e) {
 			System.out.println("Lỗi khi lưu phòng: " + e.getMessage());
 		}
